@@ -1,12 +1,12 @@
 # Privacy Policy {#privacy-policy}
 
-Last updated: November 2024
+Last updated: December 2024
 
 Your privacy is important to us. It is our policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, [https://app.safe.global](https://app.safe.global), and other sites we own and operate as well as mobile applications we offer. Wherever possible, we have designed our website so that you may navigate and use our website without having to provide Personal Data.
 
 This Privacy Policy describes how we, as a controller, collect, use and share your personal data. It applies to personal data you voluntarily provide to us, or is automatically collected by us.
 
-In this policy, "we", "us" and "our" refers to Core Contributors GmbH a company incorporated in Germany with its registered address at Gontardstraße 11, 10178 Berlin, Germany. Any data protection related questions you might have about how we handle your personal data or if you wish to exercise your data subject rights, please contact us by post or at privacy@cc0x.dev.
+In this policy, "we", "us" and "our" refers to E36 KNOTS, a French société par actions simplifiée organized under the laws of France, having its registered office located at 60, rue François 1er, 75008 Paris, incorporated with the Commercial and Companies Register of Paris under number 949 114 888. Any data protection related questions you might have about how we handle your personal data or if you wish to exercise your data subject rights, please contact us by post or at contact@e36knots.com.
 
 In this Policy, “personal data” means any information relating to you as an identified or identifiable natural person (“Data Subject”); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an online identifier or to one or more factors specific to your physical, physiological, genetic, mental, economic, cultural or social identity.
 
@@ -109,17 +109,17 @@ In this Policy, “processing” means any operation or set of operations which 
 What do some of the capitalized terms mean in this policy?
 
 1. “Blockchain” means a mathematically secured consensus ledger such as  the Ethereum Virtual Machine, an Ethereum Virtual Machine compatible validation mechanism, or other decentralized validation mechanisms.
-   2. “Transaction” means a change to the data set through a new entry in the continuous Blockchain.
-   3. “Smart Contract” is a piece of source code deployed as an application on the Blockchain which can be executed, including self-execution of Transactions as well as execution triggered by 3rd parties.
-   4. “Token” is a digital asset transferred in a Transaction, including ETH, ERC20, ERC721 and ERC1155 tokens.
-   5. “Wallet” is a cryptographic storage solution permitting you to store cryptographic assets by correlation of a (i) Public Key and (ii) a Private Key or a Smart Contract to receive, manage and send Tokens.
-   6. “Recovery Phrase” is a series of secret words used to generate one or more Private Keys and derived Public Keys.
-   7. “Public Key” is a unique sequence of numbers and letters within the Blockchain to distinguish the network participants from each other.
-   8. “Private Key” is a unique sequence of numbers and/or letters required to initiate a Blockchain Transaction and should only be known by the legal owner of the Wallet.
-   9. “Safe Account” is a modular, self-custodial (i.e. not supervised by us) smart contract-based Wallet. Safe Accounts are [open-source](https://github.com/safe-global/safe-contracts/) released under LGPL-3.0.
-   10. “Safe Interfaces” refers to Safe{Wallet} a web-based graphical user interface for Safe Accounts as well as a mobile application on Android and iOS.
-   11. “Safe Account Transaction” is a Transaction of a Safe Account, authorized by a user, typically via their Wallet.
-   12. “Profile” means the Public Key and user provided, human readable label stored locally on the user's device.
+2. “Transaction” means a change to the data set through a new entry in the continuous Blockchain.
+3. “Smart Contract” is a piece of source code deployed as an application on the Blockchain which can be executed, including self-execution of Transactions as well as execution triggered by 3rd parties.
+4. “Token” is a digital asset transferred in a Transaction, including ETH, ERC20, ERC721 and ERC1155 tokens.
+5. “Wallet” is a cryptographic storage solution permitting you to store cryptographic assets by correlation of a (i) Public Key and (ii) a Private Key or a Smart Contract to receive, manage and send Tokens.
+6. “Recovery Phrase” is a series of secret words used to generate one or more Private Keys and derived Public Keys.
+7. “Public Key” is a unique sequence of numbers and letters within the Blockchain to distinguish the network participants from each other.
+8. “Private Key” is a unique sequence of numbers and/or letters required to initiate a Blockchain Transaction and should only be known by the legal owner of the Wallet.
+9. “Safe Account” is a modular, self-custodial (i.e. not supervised by us) smart contract-based Wallet. Safe Accounts are [open-source](https://github.com/safe-global/safe-contracts/) released under LGPL-3.0.
+10. “Safe Interfaces” refers to Ash Wallet a web-based graphical user interface for Safe Accounts.
+11. “Safe Account Transaction” is a Transaction of a Safe Account, authorized by a user, typically via their Wallet.
+12. “Profile” means the Public Key and user provided, human readable label stored locally on the user's device.
 
 # 2\. Your information and the Blockchain {#2.-your-information-and-the-blockchain}
 
@@ -408,11 +408,11 @@ We use [Datadog](https://www.datadoghq.com/) to store log data as described in s
 
 ## 4.4 Mobile app stores {#4.4-mobile-app-stores}
 
-Safe{Wallet} mobile apps are distributed via [Apple AppStore](https://www.apple.com/app-store/) and [Google Play Store](https://play.google.com/). They most likely track user behavior when downloading apps from their stores as well as when using apps. We only have very limited access to that data. We can view aggregated statistics on installs and uninstalls. Grouping by device type, app version, language, carrier and country is possible.
+Ash Wallet mobile apps are distributed via [Apple AppStore](https://www.apple.com/app-store/) and [Google Play Store](https://play.google.com/). They most likely track user behavior when downloading apps from their stores as well as when using apps. We only have very limited access to that data. We can view aggregated statistics on installs and uninstalls. Grouping by device type, app version, language, carrier and country is possible.
 
 ## 4.5 Fingerprint/Touch ID/ Face ID {#4.5-fingerprint/touch-id/-face-id}
 
-We enable the user to unlock the Safe{Wallet} mobile app via biometrics information (touch ID or face ID). This is a feature of the operating system. We do not store any of this data. Instead, the API of the operating system is used to validate the user input. If you have any further questions you should consult with your preferred mobile device provider or manufacturer.
+We enable the user to unlock the Ash Wallet mobile app via biometrics information (touch ID or face ID). This is a feature of the operating system. We do not store any of this data. Instead, the API of the operating system is used to validate the user input. If you have any further questions you should consult with your preferred mobile device provider or manufacturer.
 
 ## 4.6 Google Firebase {#4.6-google-firebase}
 
@@ -462,7 +462,7 @@ We use MoonPay to offer on-ramp and off-ramp services. For that purpose personal
 
 ## 4.13 Spindl {#4.13-spindl}
 
-We use [Spindl](https://www.spindl.xyz/), a measurement and attribution solution for web3 that assists us in comprehending how users interact with different decentralized applications and our app and to enhance your experience with Safe{Wallet}. For enhanced privacy, data is stored for a period of 7 days after which it is securely deleted.
+We use [Spindl](https://www.spindl.xyz/), a measurement and attribution solution for web3 that assists us in comprehending how users interact with different decentralized applications and our app and to enhance your experience with Ash Wallet. For enhanced privacy, data is stored for a period of 7 days after which it is securely deleted.
 
 ## 4.14 Fingerprint
 
@@ -613,18 +613,8 @@ We may modify this privacy policy at any time to comply with legal requirements 
 
 ##### Contact us by post or email at: {#contact-us-by-post-or-email-at:}
 
-Core Contributors GmbH  
-Gontardstraße 11  
-10178 Berlin  
-Germany  
-privacy@cc0x.dev
-
-##### Contact our Data Protection Officer by post or email at: {#contact-our-data-protection-officer-by-post-or-email-at:}
-
-*TechGDPR DPC GmbH*  
-*Willy-Brandt-Platz 2*  
-*12529 Berlin-Schönefeld*  
-*Germany*
-
-Germany  
-[corecontributors.dpo@techgdpr.com](mailto:corecontributors.dpo@techgdpr.com) 
+*E36 Knots*  
+*60 rue Francois Ier*  
+*75008 Paris*  
+*France*  
+*contact@e36knots.com*  
