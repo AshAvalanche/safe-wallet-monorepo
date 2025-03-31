@@ -1,6 +1,11 @@
+---
+version: 1.0
+last_update_date: December, 2024
+---
+
 # Terms and Conditions
 
-Last updated: September, 2024
+Last updated: December, 2024
 
 [1\. What is the scope of the Terms?](#1.-what-is-the-scope-of-the-terms?)
 
@@ -10,7 +15,7 @@ Last updated: September, 2024
 
 [4\. What do the Services not consist of?](#4.-what-do-the-services-not-consist-of?)
 
-[5\. What do you need to know about Third-Party Safe Apps and Third-Party Services?](#5.-what-do-you-need-to-know-about-third-party-safe-apps-and-third-party-services?)
+[5\. What do you need to know about Third-Party Services?](#5.-what-do-you-need-to-know-about-third-party-safe-apps-and-third-party-services?)
 
 [6\. What are the fees for the Services?](#6.-what-are-the-fees-for-the-services?)
 
@@ -25,8 +30,6 @@ Last updated: September, 2024
 [11\. Are we responsible for the issuance of the Safe Token and any related functionalities or reward programs?](#11.-are-we-responsible-for-the-issuance-of-the-safe-token-and-any-related-functionalities-or-reward-programs?)
 
 [12\. Are we responsible for third-party content and services?](#12.-are-we-responsible-for-third-party-content-and-services?)
-
-[13\. Can we terminate or limit your right to use our Services?](#13.-can-we-terminate-or-limit-your-right-to-use-our-services?)
 
 [14\. Can you terminate your Agreement with us?](#14.-can-you-terminate-your-agreement-with-us?)
 
@@ -66,31 +69,29 @@ Last updated: September, 2024
 
 # 1\. What is the scope of the Terms? {#1.-what-is-the-scope-of-the-terms?}
 
-These Terms and Conditions (“**Terms**”) become part of any contract (“**Agreement**”) between you (“**you**”, “**yours**” or “**User**”) and Core Contributors GmbH (“**CC**”, “**we**”, “**our**” or “**us**”) provided we made these Terms accessible to you prior to entering into the Agreement and you consent to these Terms. We are a limited liability company registered with the commercial register of Berlin Charlottenburg under company number HRB 240421 B, with its registered office at c/o WeWork, Dircksenstr. 3, 10179 Berlin, Germany. You can contact us by writing to info@cc0x.dev.
+These Terms and Conditions ("**Terms**") become part of any contract ("**Agreement**") between you ("**you**", "**yours**" or "**User**") and E36 Knots ("**we**", "**our**" or "**us**") provided we made these Terms accessible to you prior to entering into the Agreement and you consent to these Terms. E36 KNOTS, a French société par actions simplifiée organized under the laws of France, having its registered office located at 60, rue François 1er, 75008 Paris, incorporated with the Commercial and Companies Register of Paris under number 949 114 888. You can contact us by writing to contact@e36knots.com.
 
-The Agreement is concluded by using the Mobile App, Web App and/or Browser Extension subject to these Terms. The use of our Services is only permitted to legal entities, partnerships and natural persons with unlimited legal capacity. In particular, minors are prohibited from using our Services.
+The Agreement is concluded by using the Web App subject to these Terms. The use of our Services is only permitted to legal entities, partnerships and natural persons with unlimited legal capacity. In particular, minors are prohibited from using our Services.
 
-The application of your general terms and conditions is excluded. Your deviating, conflicting or supplementary general terms and conditions shall only become part of the Agreement if and to the extent that CC has expressly agreed to their application in writing. This consent requirement shall apply in any case, even if for example CC, being aware of your general terms and conditions, accepts payments by the contractual partner without reservations.
-
-We reserve the right to change these Terms at any time and without giving reasons, while considering and weighing your interests. The new Terms will be communicated to you in advance. If you do not accept the new Terms, you are no longer entitled to use the Services.
+These General Conditions of Use are dated accurately and may be modified and updated by E36 Knots at any time, particularly in the event of changes to the services offered on the Websites and APIs or to applicable regulations. Consequently, the User is invited to consult the General Conditions of Use each time he/she accesses the Websites and APIs.
 
 # 2\. What do some of the capitalized terms mean in the Agreement? {#2.-what-do-some-of-the-capitalized-terms-mean-in-the-agreement?}
 
-“**Blockchain**” means a mathematically secured consensus ledger such as the Ethereum Virtual Machine, an Ethereum Virtual Machine compatible validation mechanism, or other decentralized validation mechanisms.
+"**Blockchain**" means a mathematically secured consensus ledger such as the Ethereum Virtual Machine, an Ethereum Virtual Machine compatible validation mechanism, or other decentralized validation mechanisms.
 
-“**Transaction**” means a change to the data set through a new entry in the continuous Blockchain.
+"**Transaction**" means a change to the data set through a new entry in the continuous Blockchain.
 
-“**Smart Contract**” means a piece of source code deployed as an application on the Blockchain which can be executed, including self-execution of Transactions as well as execution triggered by 3rd parties.
+"**Smart Contract**" means a piece of source code deployed as an application on the Blockchain which can be executed, including self-execution of Transactions as well as execution triggered by 3rd parties.
 
-“**Token**” means a digital asset transferred in a Transaction, including ETH, ERC20, ERC721 and ERC1155 tokens.
+"**Token**" means a digital asset transferred in a Transaction, including ETH, ERC20, ERC721 and ERC1155 tokens.
 
-“**Wallet**” means a cryptographic storage solution permitting you to store cryptographic assets by correlation of a (i) Public Key and (ii) a Private Key, or a Smart Contract to receive, manage and send Tokens.
+"**Wallet**" means a cryptographic storage solution permitting you to store cryptographic assets by correlation of a (i) Public Key and (ii) a Private Key, or a Smart Contract to receive, manage and send Tokens.
 
-“**Recovery Phrase**” means a series of secret words used to generate one or more Private Keys and derived Public Keys.
+"**Recovery Phrase**" means a series of secret words used to generate one or more Private Keys and derived Public Keys.
 
-“**Public Key**” means a unique sequence of numbers and letters within the Blockchain to distinguish the network participants from each other.
+"**Public Key**" means a unique sequence of numbers and letters within the Blockchain to distinguish the network participants from each other.
 
-“**Private Key**” means a unique sequence of numbers and/or letters required to initiate a Blockchain Transaction and should only be known by the legal owner of the Wallet.
+"**Private Key**" means a unique sequence of numbers and/or letters required to initiate a Blockchain Transaction and should only be known by the legal owner of the Wallet.
 
 # 3\. What are the Services offered? {#3.-what-are-the-services-offered?}
 
@@ -98,19 +99,19 @@ Our services (“**Services**”) primarily consist of enabling users to create 
 
 1. “**Safe Account**”
 
-A Safe Account is a modular, self-custodial (i.e. not supervised by us) smart contract-based wallet not provided by CC. Safe Accounts are open-source released under LGPL-3.0.
+A Safe Account is a modular, self-custodial (i.e. not supervised by us) smart contract-based wallet not provided by E36 Knots. Safe Accounts are open-source released under LGPL-3.0.
 
 Smart contract wallet means, unlike a standard private key Wallet, that access control for authorizing any Transaction is defined in code. An example are multi-signature wallets which require that any Transaction must be signed by a minimum number of signing wallets whereby the specifics of the requirements to authorize a Transaction can be configured in code.
 
 Owners need to connect a signing wallet with a Safe Account. Safe Accounts are compatible inter alia with standard private key Wallets such as hardware wallets, browser extension wallets and mobile wallets that support WalletConnect.
 
-2. “**Safe{Wallet} App**”
+2. “**Ash Wallet App**”
 
-You may access Safe Accounts using the Safe{Wallet} web app, mobile app for iOS and android, or the browser extension (each a “Safe{Wallet} App”). The Safe{Wallet} App may be used to manage your personal digital assets on Ethereum and other common EVM chains when you connect a Safe Account with third-party services (as defined below). The Safe{Wallet} App provides certain features that may be amended from time to time.
+You may access Safe Accounts using the Ash Wallet web app, (the "Safe App"). The Safe App may be used to manage your personal digital assets on Ethereum and other common EVM chains when you connect a Safe Account with third-party services (as defined below). The Safe App provides certain features that may be amended from time to time.
 
 3. “**Third-Party Safe Apps**”
 
-The Safe{Wallet} App allows you to connect Safe Accounts to third-party applications (“Third-Party Safe Apps”) and use third-party services such as from the decentralized finance sector, DAO tools or services related to NFTs (“Third-Party Services"). The Third-Party Safe Apps are integrated in the user interface of the Safe{Wallet} App via inline framing. The provider of the Third-Party Safe App and/or related Third-Party Services is responsible for the operation of the service and the correctness, completeness and actuality of any information provided therein. We make a pre-selection of Third-Party Safe Apps that we show in the Safe{Wallet} App. However, we only perform a rough triage in advance for obvious problems and functionality in terms of loading time and resolution capability of the transactions. Accordingly, in the event of any (technical) issues concerning the Third-Party Services, the user must only contact the respective service provider directly. The terms of service, if any, shall be governed by the applicable contractual provisions between the User and the respective provider of the Third-Party Safe Apps or Third-Party Services. Accordingly, we are not liable in the event of a breach of contract, damage or loss related to the use of such Third-Party Safe Apps or Third-Party Services.
+The Ash Wallet app allows you to connect Safe Accounts to third-party decentralized applications ("Third-Party Safe Apps") and use third-party services such as from the decentralized finance sector, DAO Tools or services related to NFTs ("Third-Party Services"). The Third-Party Safe Apps are integrated in the user interface of the Ash Wallet app via inline framing. The provider of the Third-Party Ash Wallet app and related Third-Party Service is responsible for the operation of the service and the correctness, completeness and actuality of any information provided therein. We make a pre-selection of Third-Party Safe Apps that we show in the Safe App. However, we only perform a rough triage in advance for obvious problems and functionality in terms of loading time and resolution capability of the transactions. Accordingly, in the event of any (technical) issues concerning the Third-Party Services, the user must only contact the respective service provider directly. The terms of service, if any, shall be governed by the applicable contractual provisions between the User and the respective provider of the Third-Party Service. Accordingly, we are not liable in the event of a breach of contract, damage or loss related to the use of such Third-Party Service.
 
 # 4\. What do the Services not consist of? {#4.-what-do-the-services-not-consist-of?}
 
@@ -124,7 +125,7 @@ Our Services do not consist of:
 
 4. the storage or transmission of fiat currencies;
 
-5. back-up services to recover your Recovery Phrase or Private Keys, for whose safekeeping you are solely responsible; CC has no means to recover your access to your Tokens, when you lose access to your Safe Account;
+5. back-up services to recover your Recovery Phrase or Private Keys, for whose safekeeping you are solely responsible; E36 Knots has no means to recover your access to your Tokens, when you lose access to your Safe Account;
 
 6. any form of legal, financial, investment, accounting, tax or other professional advice regarding Transactions and their suitability to you;
 
@@ -168,9 +169,9 @@ Our Services do not consist of:
 
 # 6\. What are the fees for the Services? {#6.-what-are-the-fees-for-the-services?}
 
-1. The use of the Safe{Wallet} App, Third-Party Safe Apps or Third-Party Services may cause fees, including network fees, as indicated in the respective app. CC has no control over the fees charged by the Third-Party Safe Apps or Third Party Services. CC may change its own fees at any time. Price changes will be communicated to the User in due time before taking effect.
+1. The use of the Ash Wallet App or Third-Party Safe Apps may cause fees, including network fees, as indicated in the respective app. E36 Knots has no control over the fees charged by the Third-Party Services. E36 Knots may change its own fees at any time. Price changes will be communicated to the User in due time before taking effect.
 
-2. The User is only entitled to offset and/or assert rights of retention if his counterclaims are legally established, undisputed or recognized by CC.
+2. The User is only entitled to offset and/or assert rights of retention if his counterclaims are legally established, undisputed or recognized by E36 Knots.
 
 # 7\. Are we responsible for the security of your Private Keys, Recovery Phrase or other credentials? {#7.-are-we-responsible-for-the-security-of-your-private-keys,-recovery-phrase-or-other-credentials?}
 
@@ -186,7 +187,7 @@ Our Services do not consist of:
 
 2. You are solely responsible for securing a back-up of your Safe Account access as you see fit.
 
-3. Any recovery feature we provide access to within the Safe{Wallet} App is a mechanism controlled by your Safe Account on the Blockchain, both of which we don’t have any influence over once you have set it up. We will never act as a recoverer ourselves and don’t offer recovery services. The Self Custodial Recovery feature allows you to determine your own recovery setup and nominate anyone including yourself as your recoverer. The recoverer can start the recovery process at any time. Please note that we are not responsible for notifying you of this process (see Section 7 above). Furthermore we reserve the right to cease the access to the Self Custodial Recovery feature via our Safe{Wallet} App taking the user’s reasonable interests into account and providing due notification.
+3. Any recovery feature we provide access to within the Ash Wallet App is a mechanism controlled by your Safe Account on the Blockchain, both of which we don’t have any influence over once you have set it up. We will never act as a recoverer ourselves and don’t offer recovery services. The Self Custodial Recovery feature allows you to determine your own recovery setup and nominate anyone including yourself as your recoverer. The recoverer can start the recovery process at any time. Please note that we are not responsible for notifying you of this process (see Section 7 above). Furthermore we reserve the right to cease the access to the Self Custodial Recovery feature via our Ash Wallet App taking the user’s reasonable interests into account and providing due notification.
 
 4. The recovery feature is provided free of charge and liability is limited pursuant to Section 18 below.
 
@@ -196,15 +197,15 @@ Our Services do not consist of:
 
 2. You are responsible for monitoring Safe Account as you see fit.
 
-3. Any notification service we provide or offer for subscription within the Safe{Wallet} App via e-mail or push notifications or any other means of communication is provided free of charge and liability is limited pursuant to Section 18 below. Furthermore we reserve the right to change the notification feature from time to time or cease to provide them without notice.
+3. Any notification service we provide or offer for subscription within the Ash Wallet App via e-mail or push notifications or any other means of communication is provided free of charge and liability is limited pursuant to Section 18 below. Furthermore we reserve the right to change the notification feature from time to time or cease to provide them without notice.
 
 # 10\. Are we responsible for flagging malicious transactions? {#10.-are-we-responsible-for-flagging-malicious-transactions?}
 
-1. We shall not be responsible for flagging malicious transactions in our Safe{Wallet} App.
+1. We shall not be responsible for flagging malicious transactions in our Ash Wallet App.
 
-2. You are solely responsible for checking any transaction, address, Token or other item you interact with via your Smart Account in our Safe{Wallet} App.
+2. You are solely responsible for checking any transaction, address, Token or other item you interact with via your Smart Account in our Ash Wallet App.
 
-5. Any security flagging or warning service we provide or offer for subscription within the Safe{Wallet} App is provided free of charge and liability is limited pursuant to Section 18 below. Furthermore we reserve the right to change the feature from time to time or cease to provide them without notice.
+5. Any security flagging or warning service we provide or offer for subscription within the Ash Wallet App is provided free of charge and liability is limited pursuant to Section 18 below. Furthermore we reserve the right to change the feature from time to time or cease to provide them without notice.
 
 # 11\. Are we responsible for the issuance of the Safe Token and any related functionalities or reward programs? {#11.-are-we-responsible-for-the-issuance-of-the-safe-token-and-any-related-functionalities-or-reward-programs?}
 
@@ -216,7 +217,7 @@ Our Services do not consist of:
 
 # 12\. Are we responsible for third-party content and services? {#12.-are-we-responsible-for-third-party-content-and-services?}
 
-1. You may view, have access to, and may use third-party content and services, for example widget integrations, within the Safe{Wallet} App (“Third-Party Features”). You view, access, or use Third-Party Features at your own election. Your reliance on Third-Party Features is subject to separate terms and conditions set forth by the applicable third party content and/or service provider (“Third-Party Terms”). Third-Party Terms may, amongst other things,
+1. You may view, have access to, and may use third-party content and services, for example widget integrations, within the Ash Wallet App (“Third-Party Features”). You view, access, or use Third-Party Features at your own election. Your reliance on Third-Party Features is subject to separate terms and conditions set forth by the applicable third party content and/or service provider (“Third-Party Terms”). Third-Party Terms may, amongst other things,
 
    1. involve separate fees and charges,
 
@@ -228,13 +229,13 @@ Our Services do not consist of:
 
 2. Third Party Features are provided for your convenience only. We do not verify, curate, or control Third Party Features.
 
-3. If we offer access to Third-Party Features in the Safe{Wallet} App free of charge by us (Third-Parties may charge separate fees), the liability for providing access to such Third-Party Feature is limited pursuant to Section 18 below. Furthermore we reserve the right to cease to provide access to those Third-Party Features through the Safe{Wallet} App without notice.
+3. If we offer access to Third-Party Features in the Ash Wallet App free of charge by us (Third-Parties may charge separate fees), the liability for providing access to such Third-Party Feature is limited pursuant to Section 18 below. Furthermore we reserve the right to cease to provide access to those Third-Party Features through the Ash Wallet App without notice.
 
-# 13\. Can we terminate or limit your right to use our Services? {#13.-can-we-terminate-or-limit-your-right-to-use-our-services?}
+13\. Can we terminate or limit your right to use our Services?
 
-1. We may cease offering our Services and/or terminate the Agreement and refuse access to the Safe{Wallet} App at any time. The right of the parties to terminate the Agreement at any time for cause remains unaffected. In case of our termination of the Agreement, you may no longer access your Safe Account via our Services. However, you may continue to access your Safe Account and any Tokens via a third-party wallet provider using your Recovery Phrase and Private Keys.
+1. We may cease offering our Services and/or terminate the Agreement and refuse access to the Ash Wallet App at any time. The right of the parties to terminate the Agreement at any time for cause remains unaffected. In case of our termination of the Agreement, you may no longer access your Safe Account via our Services. However, you may continue to access your Safe Account and any Tokens via a third-party wallet provider using your Recovery Phrase and Private Keys.
 
-2. We reserve the right to limit the use of the Safe{Wallet} App to a specified number of Users if necessary to protect or ensure the stability and integrity of the Services. We will only be able to limit access to the Services. At no time will we be able to limit or block access to or transfer your funds without your consent.
+2. We reserve the right to limit the use of the Ash Wallet App to a specified number of Users if necessary to protect or ensure the stability and integrity of the Services. We will only be able to limit access to the Services. At no time will we be able to limit or block access to or transfer your funds without your consent.
 
 # 14\. Can you terminate your Agreement with us? {#14.-can-you-terminate-your-agreement-with-us?}
 
@@ -242,23 +243,21 @@ You may terminate the Agreement at any time without notice.
 
 # 15\. What licenses and access do we grant to you? {#15.-what-licenses-and-access-do-we-grant-to-you?}
 
-1. All intellectual property rights in Safe Accounts and the Services throughout the world belong to us as owner or our licensors. Nothing in these Terms gives you any rights in respect of any intellectual property owned by us or our licensors and you acknowledge that you do not acquire any ownership rights by downloading the Safe{Wallet} App or any content from the Safe{Wallet} App.
+1. All intellectual property rights in Safe Accounts and the Services throughout the world belong to us as owner or our licensors. Nothing in these Terms gives you any rights in respect of any intellectual property owned by us or our licensors and you acknowledge that you do not acquire any ownership rights by downloading the Ash Wallet App or any content from the Ash Wallet App.
 
 2. If you are a consumer we grant you a simple, limited license, but do not sell, to you the Services you download solely for your own personal, non-commercial use.
 
 # 16\. What can you expect from the Services and can we make changes to them? {#16.-what-can-you-expect-from-the-services-and-can-we-make-changes-to-them?}
 
-1. Without limiting your mandatory warranties, we provide the Services to you “as is” and “as available” in relation to merchantability, fitness for a particular purpose, availability, security, title or non-infringement.
+1. Without limiting your mandatory warranties, we provide the Services to you "as is" and "as available" in relation to merchantability, fitness for a particular purpose, availability, security, title or non-infringement.
 
-2. If you use the Safe{Wallet} App via web browser, the strict liability of CC for damages (sec. 536a German Civil Code) for defects existing at the time of conclusion of the contract is precluded.
+2. The foregoing provisions will not limit E36 Knots’s liability as defined in Clause 13.
 
-3. The foregoing provisions will not limit CC’s liability as defined in Clause 18\.
+3. We reserve the right to change the format and features of the Services by making any updates to Services available for you to download or, where your device settings permit it, by automatic delivery of updates.
 
-4. We reserve the right to change the format and features of the Services by making any updates to Services available for you to download or, where your device settings permit it, by automatic delivery of updates.
+4. You are not obliged to download the updated Services, but we may cease to provide and/or update prior versions of the Services and, depending on the nature of the update, in some circumstances you may not be able to continue using the Services until you have downloaded the updated version.
 
-5. You are not obliged to download the updated Services, but we may cease to provide and/or update prior versions of the Services and, depending on the nature of the update, in some circumstances you may not be able to continue using the Services until you have downloaded the updated version.
-
-6. We may cease to provide and/or update content to the Services, with or without notice to you, if it improves the Services we provide to you, or we need to do so for security, legal or any other reasons.
+5. We may cease to provide and/or update content to the Services, with or without notice to you, if it improves the Services we provide to you, or we need to do so for security, legal or any other reasons.
 
 # 17\. What do you agree, warrant and represent? {#17.-what-do-you-agree,-warrant-and-represent?}
 
@@ -294,12 +293,12 @@ By using our Services you hereby agree, represent and warrant that:
 
 # 18\. What about our liability to you? {#18.-what-about-our-liability-to-you?}
 
-1. If the Safe{Wallet} App or Services are provided to the User free of charge (please note, in this context, that any service, network, and/or transaction fees may be charged by third parties via the Blockchain and not necessarily by us), CC shall be liable only in cases of intent, gross negligence, or if CC has fraudulently concealed a possible material or legal defect of the Safe{Wallet} App or Services.
-2. If the Safe{Wallet} App or Services are not provided to the User free of charge, CC shall be liable only (i) in cases pursuant to Clause 18.1 as well as (ii) in cases of simple negligence for damages resulting from the breach of an essential contractual duty, a duty, the performance of which enables the proper execution of this Agreement in the first place and on the compliance of which the User regularly relies and may rely, whereby CC’s liability shall be limited to the compensation of the foreseeable, typically occurring damage. The Parties agree that the typical foreseeable damage equals the sum of the annual Fees paid or agreed to be paid by the User to CC during the course of the calendar year in which the event giving rise to the damage claim occurred. Liability in cases of simple negligence for damages resulting from the breach of a non-essential contractual duty are excluded.
-3. The limitations of liability according to Clause 18.1 and Clause 18.2 do not apply (i) to damages resulting from injury to life, body or health, (ii) insofar as CC has assumed a guarantee, (iii) to claims of the User according to the Product Liability Act and (iv) to claims of the User according to the applicable data protection law.
-4. The limitation of liability also applies to the personal liability of the organs, legal representatives, employees and vicarious agents of CC.
-5. If the User suffers damages due to the loss of data, CC is not liable for this, insofar as the damage would have been avoided by a regular and complete backup of all relevant data by the User.
-6. In the event of disruptions to the technical infrastructure, the internet connection or a relevant Blockchain that we are not responsible for, we shall be exempt from our obligation to perform. This also applies if we are prevented from performing due to force majeure or other circumstances, the elimination of which is not possible or cannot be economically expected of CC.
+1. If the Ash Wallet App or Services are provided to the User free of charge (please note, in this context, that any service, network, and/or transaction fees may be charged by third parties via the Blockchain and not necessarily by us), E36 Knots shall be liable only in cases of intent, gross negligence, or if E36 Knots has fraudulently concealed a possible material or legal defect of the Ash Wallet App or Services.
+2. If the Ash Wallet App or Services are not provided to the User free of charge, E36 Knots shall be liable only (i) in cases pursuant to Clause 17.1 as well as (ii) in cases of simple negligence for damages resulting from the breach of an essential contractual duty, a duty, the performance of which enables the proper execution of this Agreement in the first place and on the compliance of which the User regularly relies and may rely, whereby E36 Knots's liability shall be limited to the compensation of the foreseeable, typically occurring damage. The Parties agree that the typical foreseeable damage equals the sum of the annual Fees paid or agreed to be paid by the User to E36 Knots during the course of the calendar year in which the event giving rise to the damage claim occurred. Liability in cases of simple negligence for damages resulting from the breach of a non-essential contractual duty are excluded. 
+3. The limitations of liability according to Clause 17.1 and Clause 17.2 do not apply (i) to damages resulting from injury to life, body or health, (ii) insofar as E36 Knots has assumed a guarantee, (iii) to claims of the User according to the Product Liability Act and (iv) to claims of the User according to the applicable data protection law. 
+4. The limitation of liability also applies to the personal liability of the organs, legal representatives, employees and vicarious agents of E36 Knots. 
+5. If the User suffers damages due to the loss of data, E36 Knots is not liable for this, insofar as the damage would have been avoided by a regular and complete backup of all relevant data by the User. 
+6. In the event of disruptions to the technical infrastructure, the internet connection or a relevant Blockchain that we are not responsible for, we shall be exempt from our obligation to perform. This also applies if we are prevented from performing due to force majeure or other circumstances, the elimination of which is not possible or cannot be economically expected of E36 Knots.
 
 # 19\. What about viruses, bugs and security vulnerabilities? {#19.-what-about-viruses,-bugs-and-security-vulnerabilities?}
 
@@ -307,7 +306,7 @@ By using our Services you hereby agree, represent and warrant that:
 
 2. You are responsible for configuring your information technology and computer programmes to access our Services and to use your own virus protection software.
 
-3. If you become aware of any exploits, bugs or vulnerabilities, please inform bounty@safe.global.
+3. If you become aware of any exploits, bugs or vulnerabilities, please inform support@ash.center.
 
 4. You must not misuse our Services by knowingly introducing material that is malicious or technologically harmful. If you do, your right to use our Services will cease immediately.
 
@@ -367,20 +366,18 @@ We inform you about our processing of personal data, including the disclosure to
 
 # 28\. Which laws apply to the Agreement? {#28.-which-laws-apply-to-the-agreement?}
 
-The Agreement including these Terms shall be governed by German law. The application of the UN Convention on Contracts for the International Sale of Goods is excluded. For consumers domiciled in another European country but Germany, the mandatory provisions of the consumer protection laws of the member state in which the consumer is domiciled shall also apply, provided that these are more advantageous for the consumer than the provisions of the German law.
+The Agreement including these Terms shall be governed by French law.
 
 # 29\. How can you get support for Safe Accounts and tell us about any problems? {#29.-how-can-you-get-support-for-safe-accounts-and-tell-us-about-any-problems?}
 
 If you want to learn more about Safe Accounts or the Service or have any problems using them or have any complaints please get in touch via any of the following channels:
 
-1. Intercom: https://help.safe.global
-2. Discord: https://chat.safe.global
-3. Twitter: https://twitter.com/safe
+- Mail: contact@ash.center
 
 # 30\. Where is the place of legal proceedings? {#30.-where-is-the-place-of-legal-proceedings?}
 
-For users who are merchants within the meaning of the German Commercial Code (Handelsgesetzbuch), a special fund (Sondervermögen) under public law or a legal person under public law, Berlin shall be the exclusive place of jurisdiction for all disputes arising from the contractual relationship.
+In the event of a dispute relating to their interpretation or execution, E36 Knots and the User shall seek, before any litigation, an amicable agreement and shall provide each other with all necessary information to this effect. In the absence of an amicable agreement between E36 Knots and the User within a period of two (2) months from the notification of the dispute to the other party, express jurisdiction is given to: the Courts of Paris (Tribunal de Commerce de Paris) if the User is a professional; the Courts of Paris (Tribunal Judiciaire de Paris) if the User is a consumer.
 
 # 31\. Is this all? {#31.-is-this-all?}
 
-These Terms constitute the entire agreement between you and us in relation to the Agreement’s subject matter. It replaces and extinguishes any and all prior agreements, draft agreements, arrangements, warranties, statements, assurances, representations and undertakings of any nature made by, or on behalf of either of us, whether oral or written, public or private, in relation to that subject matter.
+These Terms constitute the entire agreement between you and us in relation to the Agreement’s subject matter. It replaces and extinguishes any and all prior agreements, draft agreements, arrangements, warranties, statements, assurances, representations and undertakings of any nature made by, or on behalf of either of us, whether oral or written, public or private, in relation to that subject matter.  
