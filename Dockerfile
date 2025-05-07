@@ -16,6 +16,9 @@ RUN yarn config set httpTimeout 300000
 
 # Run any custom post-install scripts
 RUN yarn install --immutable
+# Temporary
+COPY v1.3.0 node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0
+COPY v1.4.1 node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1
 RUN yarn after-install
 
 # Set environment variables

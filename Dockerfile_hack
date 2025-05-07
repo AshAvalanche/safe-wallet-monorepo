@@ -1,0 +1,46 @@
+# Build stage
+FROM node:18-alpine AS builder
+RUN apk add --no-cache libc6-compat git python3 py3-pip make g++ libusb-dev eudev-dev linux-headers
+
+# Set working directory
+WORKDIR /app
+
+# Copy all files
+COPY . .
+
+# Set working directory to the web app
+WORKDIR apps/web
+
+# Enable corepack and configure yarn
+RUN corepack enable
+RUN yarn config set httpTimeout 300000
+
+# Install dependencies
+RUN yarn install --immutable
+# Temporary
+COPY v1.3.0 node_modules/@safe-global/safe-deployments/dist/assets/v1.3.0
+COPY v1.4.1 node_modules/@safe-global/safe-deployments/dist/assets/v1.4.1
+RUN yarn after-install
+
+# Set production environment variables
+ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
+
+# Build the application
+RUN yarn build
+
+# Production stage
+FROM nginx:alpine AS production
+
+# Copy our custom nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copy built static files from builder stage
+# Assuming the build output is in the 'out' directory (standard for Next.js static export)
+COPY --from=builder /app/apps/web/out /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Nginx container will start automatically
+CMD ["nginx", "-g", "daemon off;"]
