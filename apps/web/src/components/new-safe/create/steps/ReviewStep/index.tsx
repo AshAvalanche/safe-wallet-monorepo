@@ -181,14 +181,14 @@ const ReviewStep = ({ data, onSubmit, onBack, setStep }: StepRenderProps<NewSafe
     () =>
       chain
         ? createNewUndeployedSafeWithoutSalt(
-            data.safeVersion,
-            {
-              owners: data.owners.map((owner) => owner.address),
-              threshold: data.threshold,
-              paymentReceiver: data.paymentReceiver,
-            },
-            chain,
-          )
+          data.safeVersion,
+          {
+            owners: data.owners.map((owner) => owner.address),
+            threshold: data.threshold,
+            paymentReceiver: data.paymentReceiver,
+          },
+          chain,
+        )
         : undefined,
     [chain, data.owners, data.safeVersion, data.threshold, data.paymentReceiver],
   )
@@ -196,9 +196,9 @@ const ReviewStep = ({ data, onSubmit, onBack, setStep }: StepRenderProps<NewSafe
   const safePropsForGasEstimation = useMemo(() => {
     return newSafeProps
       ? {
-          ...newSafeProps,
-          saltNonce: Date.now().toString(),
-        }
+        ...newSafeProps,
+        saltNonce: Date.now().toString(),
+      }
       : undefined
   }, [newSafeProps])
 
@@ -309,10 +309,10 @@ const ReviewStep = ({ data, onSubmit, onBack, setStep }: StepRenderProps<NewSafe
 
       const options: DeploySafeProps['options'] = isEIP1559
         ? {
-            maxFeePerGas: maxFeePerGas?.toString(),
-            maxPriorityFeePerGas: maxPriorityFeePerGas?.toString(),
-            gasLimit: gasLimit?.toString(),
-          }
+          maxFeePerGas: maxFeePerGas?.toString(),
+          maxPriorityFeePerGas: maxPriorityFeePerGas?.toString(),
+          gasLimit: gasLimit?.toString(),
+        }
         : { gasPrice: maxFeePerGas?.toString(), gasLimit: gasLimit?.toString() }
 
       const onSubmitCallback = async (taskId?: string, txHash?: string) => {
@@ -358,6 +358,7 @@ const ReviewStep = ({ data, onSubmit, onBack, setStep }: StepRenderProps<NewSafe
       const submitError = isWalletRejection(error)
         ? 'User rejected signing.'
         : 'Error creating the Safe Account. Please try again later.'
+      console.log(_err)
       setSubmitError(submitError)
 
       if (isWalletRejection(error)) {

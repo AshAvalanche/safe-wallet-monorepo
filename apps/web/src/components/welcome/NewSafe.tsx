@@ -4,6 +4,7 @@ import css from './styles.module.css'
 import CheckFilled from '@/public/images/common/check-filled.svg'
 
 import WelcomeLogin from './WelcomeLogin'
+import ExternalLink from '../common/ExternalLink'
 
 const BulletListItem = ({ text }: { text: string }) => (
   <li>
@@ -53,22 +54,71 @@ const NewSafe = () => {
                 color: 'static.main',
               }}
             >
-              Unlock a new way of ownership
+              Ash Wallet - Safe for Avalanche L1s
             </Typography>
 
-            <Typography
-              sx={{
-                mb: 1,
-                color: 'static.main',
-              }}
-            >
-              The most trusted decentralized custody protocol and collective asset management platform.
+            <Typography mb={1} color="static.main">
+              {
+                'Ash Wallet is a shared infrastructure aimed at bringing all the features of Safe to the Avalanche L1s ecosystem.'
+              }{' '}
+              <br></br>
+              Read the official announcement{' '}
+              <ExternalLink
+                href="https://ashavax.hashnode.dev/announcing-ash-wallet-for-avalanche-l1s"
+                noIcon
+                sx={{ span: { textDecoration: 'underline' } }}
+                color="#000000"
+              >
+                here
+              </ExternalLink>
+              .
             </Typography>
 
             <ul className={css.bulletList}>
-              <BulletListItem text="Stealth security with multiple signers" />
-              <BulletListItem text="Make it yours with modules and guards" />
-              <BulletListItem text="Access 130+ ecosystem apps" />
+              <li>
+                <SvgIcon className={css.checkIcon} component={CheckFilled} inheritViewBox />
+                <Typography color="static.main" fontWeight={700}>
+                  All the features of{' '}
+                  <ExternalLink
+                    href="https://safe.global/"
+                    noIcon
+                    sx={{ span: { textDecoration: 'underline' } }}
+                    color="#000000"
+                  >
+                    Safe
+                  </ExternalLink>
+                </Typography>
+              </li>
+              <BulletListItem text="Hosted indexing and Ash Wallet for Avalanche L1s" />
+              <li>
+                <SvgIcon className={css.checkIcon} component={CheckFilled} inheritViewBox />
+                <Typography color="static.main" fontWeight={700}>
+                  Made with 🖤 by{' '}
+                  <ExternalLink
+                    href="https://ash.center"
+                    noIcon
+                    sx={{ span: { textDecoration: 'underline' } }}
+                    color="#000000"
+                  >
+                    Ash
+                  </ExternalLink>
+                </Typography>
+              </li>
+              <li>
+                <SvgIcon className={css.checkIcon} component={CheckFilled} inheritViewBox />
+                <Typography color="static.main" fontWeight={700}>
+                  Fill out this{' '}
+                  <ExternalLink
+                    href="https://forms.gle/x9mwwTeHEjSsp1yE9"
+                    noIcon
+                    sx={{ span: { textDecoration: 'underline' } }}
+                    color="#000000"
+                  >
+                    form
+                  </ExternalLink>{' '}
+                  to get your Avalanche L1 indexed
+                </Typography>
+              </li>
             </ul>
           </div>
         </Grid>

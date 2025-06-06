@@ -76,7 +76,23 @@ const Footer = (): ReactElement | null => {
             </li>
           </>
         ) : (
-          <li>This is an unofficial distribution of the app</li>
+          <>
+            <li>{'This is an unofficial distribution of Safe{Wallet}'}</li>
+            <li>
+              <FooterLink href={getHref(AppRoutes.terms)}>Terms & Conditions</FooterLink>
+            </li>
+            <li>
+              <FooterLink href={getHref(AppRoutes.privacy)}>Privacy Policy</FooterLink>
+            </li>
+            <li>
+              <FooterLink href={getHref(AppRoutes.cookie)}>Cookie policy</FooterLink>
+            </li>
+            <li>
+              <ExternalLink href="https://ash.center" noIcon sx={{ span: { textDecoration: 'underline' } }}>
+                Ash
+              </ExternalLink>
+            </li>
+          </>
         )}
 
         <li>
