@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import MUILink from '@mui/material/Link'
 import { AppRoutes } from '@/config/routes'
-import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 import { BRAND_NAME } from '@/config/constants'
 
 const SafeCookiePolicy = () => (
@@ -27,7 +26,7 @@ const SafeCookiePolicy = () => (
     `}</style>
 
     <h1>Cookie Policy</h1>
-    <p>Last updated: January 2024.</p>
+    <p>Last updated: July 17th 2024.</p>
     <p>
       As described in our{' '}
       <Link href={AppRoutes.privacy} passHref legacyBehavior>
@@ -41,15 +40,17 @@ const SafeCookiePolicy = () => (
     </p>
     <p>
       This Cookie Policy applies to our website at{' '}
-      <Link href="https://app.safe.global" passHref legacyBehavior>
-        <MUILink>https://app.safe.global</MUILink>
+      <Link href="https://wallet.ash.center" passHref legacyBehavior>
+        <MUILink>https://wallet.ash.center</MUILink>
       </Link>
       &nbsp;and sets out some further detail on how and why we use these technologies on our website.{' '}
     </p>
     <p>
-      In this policy, &quot;we&quot;, &quot;us&quot; and &quot;our&quot; refers to Core Contributors GmbH a company
-      incorporated in Germany with its registered address at c/o WeWork, Dircksenstr. 3, 10179 Berlin, Germany. The
-      terms &ldquo;you&rdquo; and &ldquo;your&rdquo; includes our clients, business partners and users of this website.{' '}
+      In this policy, &quot;we&quot;, &quot;us&quot; and &quot;our&quot; refers to E36 KNOTS, a French{' '}
+      <i>société par actions simplifiée</i> organized under the laws of France, having its registered office located at
+      60, rue François 1er, 75008 Paris, incorporated with the Commercial and Companies Register of Paris under number
+      949 114 888. The terms &ldquo;you&rdquo; and &ldquo;your&rdquo; includes our clients, business partners and users
+      of this website.{' '}
     </p>
     <p>
       By using our website, you consent to storage and access to cookies and other technologies on your device, in
@@ -347,7 +348,7 @@ const SafeCookiePolicy = () => (
             <p>_BEAMER_FILTER_BY_URL_{'{productID}'}</p>
           </td>
           <td colSpan={1} rowSpan={1}>
-            <p>app.safe.global</p>
+            <p>wallet.ash.center</p>
           </td>
           <td colSpan={1} rowSpan={1}>
             <p>Stores whether to apply URL filtering on the feed.</p>
@@ -367,7 +368,7 @@ const SafeCookiePolicy = () => (
             <p>_BEAMER_DATE_{'{productID}'}</p>
           </td>
           <td colSpan={1} rowSpan={1}>
-            <p>app.safe.global</p>
+            <p>wallet.ash.center</p>
           </td>
           <td colSpan={1} rowSpan={1}>
             <p>Stores the latest date in which the feed was opened.</p>
@@ -387,7 +388,7 @@ const SafeCookiePolicy = () => (
             <p>_BEAMER_LAST_POST_SHOWN_{'{productID}'}</p>
           </td>
           <td colSpan={1} rowSpan={1}>
-            <p>app.safe.global</p>
+            <p>wallet.ash.center</p>
           </td>
           <td colSpan={1} rowSpan={1}>
             <p>Stores the ID of the last post shown as a teaser.</p>
@@ -407,7 +408,7 @@ const SafeCookiePolicy = () => (
             <p>_BEAMER_BOOSTED_ANNOUNCEMENT_DATE_{'{productID}'}</p>
           </td>
           <td colSpan={1} rowSpan={1}>
-            <p>app.safe.global</p>
+            <p>wallet.ash.center</p>
           </td>
           <td colSpan={1} rowSpan={1}>
             <p>Stores the latest date in which a boosted announcement was displayed.</p>
@@ -427,7 +428,7 @@ const SafeCookiePolicy = () => (
             <p>_BEAMER_FIRST_VISIT_{'{productID}'}</p>
           </td>
           <td colSpan={1} rowSpan={1}>
-            <p>app.safe.global</p>
+            <p>wallet.ash.center</p>
           </td>
           <td colSpan={1} rowSpan={1}>
             <p>Stores the date of this user&rsquo;s first visit to the site.</p>
@@ -447,7 +448,7 @@ const SafeCookiePolicy = () => (
             <p>_BEAMER_USER_ID_{'{productID}'}</p>
           </td>
           <td colSpan={1} rowSpan={1}>
-            <p>app.safe.global</p>
+            <p>wallet.ash.center</p>
           </td>
           <td colSpan={1} rowSpan={1}>
             <p>Stores an internal ID for this user.</p>
@@ -493,7 +494,7 @@ const SafeCookiePolicy = () => (
             <p>_ga</p>
           </td>
           <td colSpan={1} rowSpan={1}>
-            <p>safe.global</p>
+            <p>ash.center</p>
           </td>
           <td colSpan={1} rowSpan={1}>
             <p>Used to distinguish users</p>
@@ -591,15 +592,15 @@ const SafeCookiePolicy = () => (
 )
 
 const CookiePolicy: NextPage = () => {
-  const isOfficialHost = useIsOfficialHost()
-
   return (
     <>
       <Head>
         <title>{`${BRAND_NAME} – Cookie policy`}</title>
       </Head>
 
-      <main>{isOfficialHost && <SafeCookiePolicy />}</main>
+      <main>
+        <SafeCookiePolicy />
+      </main>
     </>
   )
 }
