@@ -49,13 +49,13 @@ export const navItems: NavItem[] = [
     icon: <SvgIcon data-testid="settings-nav-icon" component={SettingsIcon} inheritViewBox />,
     href: AppRoutes.settings.setup,
   },
-  {
-    label: 'API',
-    icon: <SvgIcon component={ApiIcon} inheritViewBox />,
-    href: '',
-    externalUrl: DEVELOPER_PORTAL_URL,
-    tag: <Chip sx={{ backgroundColor: 'secondary.light', color: 'static.main' }} />,
-  },
+  // {
+  //   label: 'API',
+  //   icon: <SvgIcon component={ApiIcon} inheritViewBox />,
+  //   href: '',
+  //   externalUrl: DEVELOPER_PORTAL_URL,
+  //   tag: <Chip sx={{ backgroundColor: 'secondary.light', color: 'static.main' }} />,
+  // },
 ]
 
 export const transactionNavItems = [

@@ -3979,18 +3979,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@coinbase/wallet-sdk@npm:4.3.0":
-  version: 4.3.0
-  resolution: "@coinbase/wallet-sdk@npm:4.3.0"
-  dependencies:
-    "@noble/hashes": "npm:^1.4.0"
-    clsx: "npm:^1.2.1"
-    eventemitter3: "npm:^5.0.1"
-    preact: "npm:^10.24.2"
-  checksum: 10/56d24aaf5170d05fafe4cdafa06a000e259f3f9f3eae7879bcb5e1c316e5e3d85754639f31d3e366ed208f1667cb7d10d3c7bcae8e40cb5f46bea7c291d7c2bf
-  languageName: node
-  linkType: hard
-
 "@cowprotocol/app-data@npm:^3.1.0":
   version: 3.1.0
   resolution: "@cowprotocol/app-data@npm:3.1.0"
@@ -13690,7 +13678,6 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.18.1"
     "@walletconnect/core": "npm:^2.21.10"
     "@walletconnect/utils": "npm:^2.21.10"
-    "@web3-onboard/coinbase": "npm:^2.4.2"
     "@web3-onboard/core": "npm:^2.24.1"
     "@web3-onboard/hw-common": "npm:^2.3.3"
     "@web3-onboard/injected-wallets": "npm:^2.11.3"
@@ -19812,16 +19799,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@web3-onboard/coinbase@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "@web3-onboard/coinbase@npm:2.4.2"
-  dependencies:
-    "@coinbase/wallet-sdk": "npm:4.3.0"
-    "@web3-onboard/common": "npm:^2.4.1"
-  checksum: 10/d0815040fe3b13d0e6a2f7b3cddfb7af0e46c0c545adab2b76dbc48d146af89914e43920b21ef5d246ac396b28e03d4bc079cc439c98ad4b8e7481f617d9dade
-  languageName: node
-  linkType: hard
-
 "@web3-onboard/common@npm:^2.4.1":
   version: 2.4.2
   resolution: "@web3-onboard/common@npm:2.4.2"
@@ -22684,13 +22661,6 @@ __metadata:
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
   checksum: 10/d06418b7335897209e77bdd430d04f882189582e67bd1f75a04565f3f07f5b3f119a9d670c943b6697d0afb100f03b866b3b8a1f91d4d02d72c4ecf2bb64b5dd
-  languageName: node
-  linkType: hard
-
-"clsx@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "clsx@npm:1.2.1"
-  checksum: 10/5ded6f61f15f1fa0350e691ccec43a28b12fb8e64c8e94715f2a937bc3722d4c3ed41d6e945c971fc4dcc2a7213a43323beaf2e1c28654af63ba70c9968a8643
   languageName: node
   linkType: hard
 
@@ -36467,13 +36437,6 @@ __metadata:
     axios: "npm:^1.6.2"
     rusha: "npm:^0.8.14"
   checksum: 10/626af1eff76bff44be543301512fad47bcf2905c47751a66cca87e27f02ca7469846ef9026c1b0e703bbe95f9b40730f92e1eeefbfff522115edc7179937c7ba
-  languageName: node
-  linkType: hard
-
-"preact@npm:^10.24.2":
-  version: 10.26.2
-  resolution: "preact@npm:10.26.2"
-  checksum: 10/3bcb7bb5018b6098c2f02e39537b9fa60fe47cd606ed1ad11a32560751121a54ed3a3d68638c4845f84cb633133467496cbf198fdf3d7238a41d2c92929b9d63
   languageName: node
   linkType: hard
 

@@ -1,5 +1,6 @@
 import { useIsOutreachSafe } from '@/features/targeted-features'
 import { useIsHypernativeGuard } from './useIsHypernativeGuard'
+import { useIsHypernativeFeature } from './useIsHypernativeFeature'
 import { HYPERNATIVE_ALLOWLIST_OUTREACH_ID } from '../constants'
 
 export type HypernativeEligibility = {
@@ -14,9 +15,11 @@ export type HypernativeEligibility = {
  * Eligibility requires a Hypernative guard installed or targeted outreach membership.
  */
 export const useIsHypernativeEligible = (): HypernativeEligibility => {
+  const isHypernativeFeatureEnabled = useIsHypernativeFeature()
   const { isHypernativeGuard, loading: guardLoading } = useIsHypernativeGuard()
   const { isTargeted: isAllowlistedSafe, loading: outreachLoading } = useIsOutreachSafe(
     HYPERNATIVE_ALLOWLIST_OUTREACH_ID,
+    { skip: !isHypernativeFeatureEnabled },
   )
 
   return {

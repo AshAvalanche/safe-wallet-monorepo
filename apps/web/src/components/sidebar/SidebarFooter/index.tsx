@@ -45,7 +45,7 @@ const SidebarFooter = (): ReactElement => {
         </>
       )}
 
-      <Stack direction="row" alignItems="center" spacing={1} my={0.5} mx={1}>
+      {/* <Stack direction="row" alignItems="center" spacing={1} my={0.5} mx={1}>
         <IndexingStatus />
 
         <Box ml="auto !important">
@@ -67,7 +67,7 @@ const SidebarFooter = (): ReactElement => {
             <SvgIcon component={HelpCenterIcon} inheritViewBox fontSize="small" />
           </IconButton>
         </Track>
-      </Stack>
+      </Stack> */}
     </>
   )
 }

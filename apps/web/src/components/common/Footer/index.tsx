@@ -36,7 +36,7 @@ const Footer: React.FC<FooterProps> = ({
   forceShow,
   preferences = true,
   versionIcon = true,
-  helpCenter = true,
+  helpCenter = false,
   className = css.container,
 }): ReactElement | null => {
   const router = useRouter()
@@ -58,10 +58,8 @@ const Footer: React.FC<FooterProps> = ({
       <ul>
         {isOfficialHost ? (
           <>
-            <li>
-              <Typography variant="caption">&copy;{copyrightYear} Safe Labs GmbH</Typography>
-            </li>
-            <li>
+            <li>This is an unofficial distribution of the app</li>
+            {/* <li>
               <FooterLink href={getHref(AppRoutes.terms)}>Terms</FooterLink>
             </li>
             <li>
@@ -75,6 +73,11 @@ const Footer: React.FC<FooterProps> = ({
             </li>
             <li>
               <FooterLink href={getHref(AppRoutes.cookie)}>Cookie policy</FooterLink>
+            </li> */}
+            <li>
+              <ExternalLink href={"https://ash.center"} noIcon sx={{ span: { textDecoration: 'underline' } }} >
+                Ash
+              </ExternalLink>
             </li>
             {preferences && (
               <li>

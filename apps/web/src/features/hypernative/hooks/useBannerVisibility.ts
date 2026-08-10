@@ -59,12 +59,14 @@ export const useBannerVisibility = (bannerType: BannerType): BannerVisibilityRes
   const isTxReportButton = bannerType === BannerType.TxReportButton
   const skipBalanceCheck = bannerType === BannerType.NoBalanceCheck
 
+  const skipOutreachRequests = !isEnabled
+
   const { isTargeted: isPromoTargeted, loading: outreachLoading } = useIsOutreachSafe(HYPERNATIVE_OUTREACH_ID, {
-    skip: isTxReportButton,
+    skip: isTxReportButton || skipOutreachRequests,
   })
   const { isTargeted: isAllowlistedSafe, loading: allowlistLoading } = useIsOutreachSafe(
     HYPERNATIVE_ALLOWLIST_OUTREACH_ID,
-    { skip: !isTxReportButton },
+    { skip: !isTxReportButton || skipOutreachRequests },
   )
 
   const hasEnoughBalance = hasSufficientBalance(balances.fiatTotal)

@@ -44,7 +44,8 @@
   margin: auto;
   text-align: center;
   margin: var(--space-8) auto;
-  max-width: 350px;
+  max-width: 600px;
+  width: 90%;
 }
 
 .label {

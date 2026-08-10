@@ -119,7 +119,7 @@ const Dashboard = (): ReactElement => {
 
               {showSafeApps && <ExplorePossibleWidget />}
 
-              <NewsDisclaimers />
+              {/* <NewsDisclaimers /> */}
             </>
           )}
         </div>

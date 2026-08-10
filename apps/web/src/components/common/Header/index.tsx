@@ -15,6 +15,7 @@ import NotificationCenter from '@/components/notification-center/NotificationCen
 import { AppRoutes } from '@/config/routes'
 import SafeLabsLogo from '@/public/images/logo-safe-labs.svg'
 import SafeLogoMobile from '@/public/images/logo-no-text.svg'
+import ForkDefaultLogo from '@/public/images/logo.svg'
 import Link from 'next/link'
 import useSafeAddress from '@/hooks/useSafeAddress'
 import BatchIndicator from '@/components/batch/BatchIndicator'
@@ -67,6 +68,12 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
 
   const showBatchButton = safeAddress && (!isProposer || isSafeOwner)
 
+  const forkBrandLogo = BRAND_LOGO ? (
+    <img src={BRAND_LOGO} alt={BRAND_NAME} />
+  ) : (
+    <ForkDefaultLogo aria-label={BRAND_NAME} role="img" />
+  )
+
   return (
     <Paper className={css.container}>
       <div className={classnames(css.element, css.menuButton)}>
@@ -79,13 +86,13 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
 
       <div className={classnames(css.element, css.logoMobile)}>
         <Link href={logoHref} passHref>
-          {isOfficialHost ? <SafeLogoMobile alt="Safe logo" /> : null}
+          {isOfficialHost ? <SafeLogoMobile alt="Safe logo" /> : forkBrandLogo}
         </Link>
       </div>
 
       <div className={classnames(css.element, css.hideMobile, css.logo)}>
         <Link href={logoHref} passHref>
-          {isOfficialHost ? <SafeLabsLogo alt={BRAND_NAME} /> : BRAND_LOGO && <img src={BRAND_LOGO} alt={BRAND_NAME} />}
+          {isOfficialHost ? <SafeLabsLogo alt={BRAND_NAME} /> : forkBrandLogo}
         </Link>
       </div>
 

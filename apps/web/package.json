@@ -82,7 +82,6 @@
     "@sentry/react": "^7.91.0",
     "@walletconnect/core": "^2.21.10",
     "@walletconnect/utils": "^2.21.10",
-    "@web3-onboard/coinbase": "^2.4.2",
     "@web3-onboard/core": "^2.24.1",
     "@web3-onboard/hw-common": "^2.3.3",
     "@web3-onboard/injected-wallets": "^2.11.3",

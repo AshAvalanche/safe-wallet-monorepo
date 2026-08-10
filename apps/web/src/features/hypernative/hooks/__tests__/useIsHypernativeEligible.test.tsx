@@ -1,6 +1,7 @@
 import { renderHook } from '@/tests/test-utils'
 import { useIsOutreachSafe } from '@/features/targeted-features'
 import { useIsHypernativeGuard } from '../useIsHypernativeGuard'
+import { useIsHypernativeFeature } from '../useIsHypernativeFeature'
 import { HYPERNATIVE_ALLOWLIST_OUTREACH_ID } from '../../constants'
 import { useIsHypernativeEligible } from '../useIsHypernativeEligible'
 
@@ -8,14 +9,17 @@ jest.mock('@/features/targeted-features', () => ({
   useIsOutreachSafe: jest.fn(),
 }))
 jest.mock('../useIsHypernativeGuard')
+jest.mock('../useIsHypernativeFeature')
 
 const mockUseIsOutreachSafe = useIsOutreachSafe as jest.MockedFunction<typeof useIsOutreachSafe>
 const mockUseIsHypernativeGuard = useIsHypernativeGuard as jest.MockedFunction<typeof useIsHypernativeGuard>
+const mockUseIsHypernativeFeature = useIsHypernativeFeature as jest.MockedFunction<typeof useIsHypernativeFeature>
 
 describe('useIsHypernativeEligible', () => {
   beforeEach(() => {
     mockUseIsOutreachSafe.mockReturnValue({ isTargeted: false, loading: false })
     mockUseIsHypernativeGuard.mockReturnValue({ isHypernativeGuard: false, loading: false })
+    mockUseIsHypernativeFeature.mockReturnValue(true)
   })
 
   it('returns eligible when guard is installed and prerequisites are met', () => {
@@ -49,7 +53,15 @@ describe('useIsHypernativeEligible', () => {
   it('passes the login outreach ID to targeted messaging', () => {
     renderHook(() => useIsHypernativeEligible())
 
-    expect(mockUseIsOutreachSafe).toHaveBeenCalledWith(HYPERNATIVE_ALLOWLIST_OUTREACH_ID)
+    expect(mockUseIsOutreachSafe).toHaveBeenCalledWith(HYPERNATIVE_ALLOWLIST_OUTREACH_ID, { skip: false })
+  })
+
+  it('skips targeted messaging when Hypernative feature is disabled', () => {
+    mockUseIsHypernativeFeature.mockReturnValue(false)
+
+    renderHook(() => useIsHypernativeEligible())
+
+    expect(mockUseIsOutreachSafe).toHaveBeenCalledWith(HYPERNATIVE_ALLOWLIST_OUTREACH_ID, { skip: true })
   })
 
   it('exposes guard loading state', () => {

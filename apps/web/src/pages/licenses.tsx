@@ -368,12 +368,6 @@ const SafeLicenses = () => (
               </TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>@web3-onboard/coinbase</TableCell>
-              <TableCell>
-                <ExternalLink href="https://github.com/blocknative/web3-onboard/blob/main/LICENSE" />
-              </TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell>@web3-onboard/core</TableCell>
               <TableCell>
                 <ExternalLink href="https://github.com/blocknative/web3-onboard/blob/main/LICENSE" />

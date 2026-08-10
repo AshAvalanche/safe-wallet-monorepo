@@ -1118,6 +1118,30 @@ describe('useBannerVisibility', () => {
         expect(useIsOutreachSafeSpy).toHaveBeenNthCalledWith(2, HYPERNATIVE_ALLOWLIST_OUTREACH_ID, { skip: true })
       })
 
+      it('should skip targeted messaging requests when Hypernative feature is disabled', () => {
+        jest.spyOn(useIsHypernativeFeatureHook, 'useIsHypernativeFeature').mockReturnValue(false)
+        jest.spyOn(useBannerStorageHook, 'useBannerStorage').mockReturnValue(true)
+        jest.spyOn(useWalletHook, 'default').mockReturnValue(mockWallet)
+        jest.spyOn(useIsSafeOwnerHook, 'default').mockReturnValue(true)
+        jest.spyOn(useVisibleBalancesHook, 'useVisibleBalances').mockReturnValue({
+          balances: { fiatTotal: '2000000', items: [] },
+          loaded: true,
+          loading: false,
+        })
+        jest.spyOn(useIsHypernativeGuardHook, 'useIsHypernativeGuard').mockReturnValue({
+          isHypernativeGuard: false,
+          loading: false,
+        })
+        const useIsOutreachSafeSpy = jest
+          .spyOn(useIsOutreachSafeHook, 'useIsOutreachSafe')
+          .mockReturnValue({ isTargeted: false, loading: false })
+
+        renderHook(() => useBannerVisibility(BannerType.Promo))
+
+        expect(useIsOutreachSafeSpy).toHaveBeenNthCalledWith(1, HYPERNATIVE_OUTREACH_ID, { skip: true })
+        expect(useIsOutreachSafeSpy).toHaveBeenNthCalledWith(2, HYPERNATIVE_ALLOWLIST_OUTREACH_ID, { skip: true })
+      })
+
       it('should NOT show banner for previous campaigns (different outreachId)', () => {
         jest.spyOn(useIsHypernativeFeatureHook, 'useIsHypernativeFeature').mockReturnValue(true)
         jest.spyOn(useBannerStorageHook, 'useBannerStorage').mockReturnValue(true)
